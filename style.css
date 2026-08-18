@@ -83,3 +83,8 @@ footer {
         font-size: 32px;
     }
 }
+
+.dark .card,
+.dark .project {
+    background: #374151;
+}
