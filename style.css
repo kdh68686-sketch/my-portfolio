@@ -60,6 +60,19 @@ footer {
     padding: 30px;
 }
 
+
+/* 🌙 다크 모드 */
+.dark {
+    background: #111827;
+    color: white;
+}
+
+.dark section {
+    background: #1f2937;
+}
+
+
+/* 📱 모바일 화면 */
 @media (max-width: 700px) {
 
     .cards {
@@ -69,12 +82,4 @@ footer {
     header h1 {
         font-size: 32px;
     }
-    .dark {
-    background: #111827;
-    color: white;
-}
-
-.dark section {
-    background: #1f2937;
-}
 }
