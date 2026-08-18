@@ -69,4 +69,12 @@ footer {
     header h1 {
         font-size: 32px;
     }
+    .dark {
+    background: #111827;
+    color: white;
+}
+
+.dark section {
+    background: #1f2937;
+}
 }
