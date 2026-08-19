@@ -1,90 +1,54 @@
-* {
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #222;
-}
-
-header {
-    padding: 70px 20px;
-    text-align: center;
-    background: #111827;
-    color: white;
-}
-
-header h1 {
-    margin-bottom: 10px;
-    font-size: 42px;
-}
-
-main {
+.hero-content {
+    width: 100%;
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0 auto;
 }
 
-section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 16px;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card,
-.project {
-    padding: 20px;
-    background: #f3f4f6;
-    border-radius: 12px;
-}
-
-.project {
+.eyebrow {
+    font-size: 14px;
+    letter-spacing: 3px;
     margin-bottom: 15px;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
+.hero h1 {
+    font-size: 56px;
+    margin: 0 0 10px;
 }
 
-
-/* 🌙 다크 모드 */
-.dark {
-    background: #111827;
-    color: white;
+.hero h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 25px;
 }
 
-.dark section {
-    background: #1f2937;
+.intro {
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-
-/* 📱 모바일 화면 */
-@media (max-width: 700px) {
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 32px;
-    }
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
 }
 
-.dark .card,
-.dark .project {
-    background: #374151;
+.skills span {
+    padding: 8px 14px;
+    border: 1px solid currentColor;
+    border-radius: 20px;
+}
+
+.evidence {
+    margin-top: 25px;
+    line-height: 1.8;
 }
