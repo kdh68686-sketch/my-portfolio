@@ -1,54 +1,85 @@
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+* {
     box-sizing: border-box;
 }
 
-.hero-content {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
 }
 
-.eyebrow {
-    font-size: 14px;
-    letter-spacing: 3px;
+header {
+    padding: 70px 20px;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+header h1 {
     margin-bottom: 10px;
+    font-size: 42px;
 }
 
-.hero h1 {
-    font-size: 52px;
-    margin: 0 0 8px;
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.hero h2 {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 0 0 18px;
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 16px;
 }
 
-.intro {
-    font-size: 18px;
-    line-height: 1.5;
+h2 {
+    margin-top: 0;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.skills span {
-    padding: 8px 14px;
-    border: 1px solid currentColor;
-    border-radius: 20px;
+.card,
+.project {
+    padding: 20px;
+    background: #f3f4f6;
+    border-radius: 12px;
 }
 
-.evidence {
-    margin-top: 18px;
-    line-height: 1.6;
+.project {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* 🌙 다크 모드 */
+.dark {
+    background: #111827;
+    color: white;
+}
+
+.dark section {
+    background: #1f2937;
+}
+
+
+/* 📱 모바일 화면 */
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
 }
