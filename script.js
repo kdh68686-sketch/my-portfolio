@@ -11,13 +11,6 @@ const detailButton = document.querySelector(".detailButton");
 const detailText = document.querySelector(".detailText");
 
 detailButton.addEventListener("click", function () {
-
-    detailText.hidden = !detailText.hidden;
-
-    if (detailText.hidden) {
-        detailButton.textContent = "자세히 보기";
-    } else {
-        detailButton.textContent = "접기";
-    }
-
+    detailText.hidden = false;
+    detailButton.textContent = "접기";
 });
