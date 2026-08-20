@@ -1,80 +1,119 @@
-* { 
-    box-sizing: border-box; 
-} 
- 
-body { 
-    margin: 0; 
-    font-family: Arial, sans-serif; 
-    background: #f5f7fa; 
-    color: #222; 
-} 
- 
-header { 
-    padding: 70px 20px; 
-    text-align: center; 
-    background: #111827; 
-    color: white; 
-} 
- 
-header h1 { 
-    margin-bottom: 10px; 
-    font-size: 42px; 
-} 
- 
-main { 
-    max-width: 1000px; 
-    margin: 40px auto; 
-    padding: 0 20px; 
-} 
- 
-section { 
-    background: white; 
-    padding: 30px; 
-    margin-bottom: 25px; 
-    border-radius: 16px; 
-} 
- 
-h2 { 
-    margin-top: 0; 
-} 
- 
-.cards { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-} 
- 
-.card, 
-.project { 
-    padding: 20px; 
-    background: #f3f4f6; 
-    border-radius: 12px; 
-} 
- 
-.project { 
-    margin-bottom: 15px; 
-} 
- 
-footer { 
-    text-align: center; 
-    padding: 30px; 
-} 
- 
-@media (max-width: 700px) { 
- 
-    .cards { 
-        grid-template-columns: 1fr; 
-    } 
- 
-    header h1 { 
-        font-size: 32px; 
-    } 
-    .dark { 
-    background: #111827; 
-    color: white; 
-} 
- 
-.dark section { 
-    background: #1f2937; 
-} 
-}이건 이대로?
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* 첫 화면 */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-info {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hero-info div {
+    padding: 20px;
+    background: #1f2937;
+    border-radius: 12px;
+}
+
+.hero-info h3 {
+    margin-top: 0;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.project {
+    padding: 20px;
+    background: #f3f4f6;
+    border-radius: 12px;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* 🌙 다크 모드 */
+.dark {
+    background: #111827;
+    color: white;
+}
+
+.dark section {
+    background: #1f2937;
+}
+
+.dark .card,
+.dark .project {
+    background: #374151;
+}
+
+
+/* 📱 모바일 화면 */
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero-info {
+        grid-template-columns: 1fr;
+    }
+}
