@@ -117,3 +117,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+button:focus,
+a:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
