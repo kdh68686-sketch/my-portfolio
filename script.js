@@ -1,14 +1,17 @@
-const button = document.getElementById("themeButton");
+// 🌙 다크 모드
+const themeButton = document.getElementById("themeButton");
 
-button.addEventListener("click", function () {
+themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark");
 });
 
 
+// 📖 자세히 보기
 const detailButton = document.querySelector(".detailButton");
 const detailText = document.querySelector(".detailText");
 
 detailButton.addEventListener("click", function () {
+
     detailText.hidden = !detailText.hidden;
 
     if (detailText.hidden) {
@@ -16,4 +19,5 @@ detailButton.addEventListener("click", function () {
     } else {
         detailButton.textContent = "접기";
     }
+
 });
